@@ -2,7 +2,7 @@ from selenium import webdriver
 from tempfile import mkdtemp
 
 
-def handler(event=None, context=None):
+def lambda_handler(event=None, context=None):
     options = webdriver.ChromeOptions()
     options.binary_location = '/opt/chrome/chrome'
     options.add_argument('--headless')
